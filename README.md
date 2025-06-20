@@ -1,6 +1,6 @@
 # 🚀 DevOps Laboratorio con implementación en Google Cloud
 
-![](https://drive.google.com/file/d/1ZLKxp_uFL03mq0-nX4Lz2H5vicn6icDh/view?usp=drive_link)
+![](./photo/IMG-20211015-WA0048.jpeg)
 
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://docker.com)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)](https://fastapi.tiangolo.com/)
