@@ -1,6 +1,6 @@
-# 🚀 DevOps Items Management - Proyecto  by RoxsRoss
+# 🚀 DevOps Laboratorio con implementación en Google Cloud
 
-![](https://media.licdn.com/dms/image/v2/D4D16AQF4ND-cC_uxZg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1731367727725?e=1753920000&v=beta&t=80SZ4IOx4V_VDcCBli7aFjYuMhzMos9SRFq8GnV8zc4)
+![](https://drive.google.com/file/d/1ZLKxp_uFL03mq0-nX4Lz2H5vicn6icDh/view?usp=drive_link)
 
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://docker.com)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -8,10 +8,10 @@
 [![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-orange?logo=prometheus)](https://prometheus.io)
 [![Grafana](https://img.shields.io/badge/Grafana-Visualization-orange?logo=grafana)](https://grafana.com)
 
-> **Proyecto educativo de DevOps** creado por **roxsross** para aprender conceptos fundamentales de desarrollo, contenedores, orquestación y monitoreo.
+> **Proyecto educativo de DevOps** creado para aprender conceptos fundamentales de desarrollo, contenedores, orquestación y monitoreo.
 
 
-## 📸 Screenshots del Ecosistema ROXS
+## 📸 Screenshots del Ecosistema
 
 <div align="center">
 
@@ -152,8 +152,8 @@ make urls
 
 ```bash
 # 1. Crear redes necesarias
-docker network create roxs-devops-network
-docker network create roxs-monitoring-network
+docker network create devops-network
+docker network create monitoring-network
 
 # 2. Levantar la aplicación
 docker-compose up -d
@@ -309,6 +309,10 @@ Visita http://localhost:3000/docs para explorar la API de forma interactiva con 
 │   │           └── datasources.yml
 │   └── prometheus/
 │       └── prometheus.yml      # Configuración Prometheus
+├── Terraform/                  # Infraestructura como código (Terraform)
+│   ├── main.tf                 # Definición principal de recursos
+│   ├── startup.sh              # Script de inicialización
+│   └── terraform.tfstate       # Estado de Terraform
 ├── docker-compose.yml          # Aplicación principal
 ├── docker-compose.monitoring.yml # Stack de monitoreo
 ├── Makefile                    # Comandos automatizados
@@ -352,8 +356,8 @@ Visita http://localhost:3000/docs para explorar la API de forma interactiva con 
 # Solución: Crear las redes manualmente
 make install
 # o
-docker network create roxs-devops-network
-docker network create roxs-monitoring-network
+docker network create devops-network
+docker network create monitoring-network
 ```
 
 #### ❌ Error: "port already in use"
@@ -498,7 +502,7 @@ Este proyecto está licenciado bajo MIT License - ver el archivo [LICENSE](LICEN
 
 ## 👨‍💻 Autor
 
-**roxsross** - Instructor DevOps y Cloud
+**Instructor DevOps y Cloud**
 
 - 🐦 Twitter: [@roxsross](https://twitter.com/roxsross)
 - 🔗 LinkedIn: [roxsross](https://linkedin.com/in/roxsross)
