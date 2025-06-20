@@ -1,5 +1,5 @@
 provider "google" {
-  region = "us-central1"
+  region  = "us-central1"
   project = "test"
 }
 
@@ -24,19 +24,19 @@ resource "google_compute_instance" "my_instance" {
   }
 
   guest_accelerator {
-    type = "nvidia-tesla-t4" # <<<<<<<<<< Try changing this to nvidia-tesla-p4 to compare the costs
+    type  = "nvidia-tesla-t4" # <<<<<<<<<< Try changing this to nvidia-tesla-p4 to compare the costs
     count = 4
   }
 
   labels = {
     environment = "production"
-    service = "web-app"
+    service     = "web-app"
   }
 }
 
 resource "google_cloudfunctions_function" "my_function" {
-  runtime = "nodejs20"
-  name = "test"
+  runtime             = "nodejs20"
+  name                = "test"
   available_memory_mb = 512
 
   labels = {
